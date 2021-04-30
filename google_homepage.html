@@ -1,0 +1,77 @@
+<html>
+    <style>
+       .grid{
+           display: grid;
+           grid-template-columns: fr;
+           grid-gap: 10em;
+           grid-auto-rows:auto;
+           align-items:center;
+       }
+       #content, .footer{
+           align-self: center;
+           justify-self: center;
+       }
+       header{
+            font-weight: light;
+            font-family: sans serif, helvetica;
+            font-size: 12px;
+       }
+       img {
+           padding: 50px;
+           align-self: center;
+           justify-self: center;
+           transform: scale(1.25);
+       }
+       input{
+           border-radius: 10px;
+           opacity: 0.7;
+           width: 400px;
+           align-self: center;
+           justify-self: center;
+       }
+
+       .buttonrow { 
+           display: grid;
+           width: 300px;
+           grid-template-column: 2fr;
+           grid-template-row: 1;
+           justify-self: center;
+       }
+       #gsearch{
+           grid-column: 0/1;
+           grid-row: 1;
+       }
+       #luckysearch{
+           grid-column:1/2;
+           grid-row: 1;
+       }
+       footer{
+           text-align:center;
+           padding: auto;
+           background-color: rgb(219, 214, 214);
+       }
+
+    </style>
+<div class="grid">
+<header>
+        <a> About</a> <a> Store</a>
+</header>
+
+
+<body id="content">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <input type="search">
+    </input> 
+    <div class="buttonrow">
+    <button id="gsearch"> Google Search </button>
+    <button id="luckysearch"> I'm Feeling Lucky </button>
+    </div>
+    
+</body>
+
+<footer>
+    <h6> Carbon neutral since 2007 </h6>
+</footer>
+</div>
+
+</html>
